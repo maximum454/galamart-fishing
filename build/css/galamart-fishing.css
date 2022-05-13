@@ -156,6 +156,36 @@ p {
   display: none;
 }
 
+.fishing-form__catalog {
+  margin-bottom: 30px;
+}
+
+.fishing-form__control {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding-bottom: 51px;
+  margin-bottom: 36px;
+  border-bottom: 1px solid #EEEEEE;
+}
+
+.fishing-form__control .btn {
+  border-radius: 30px;
+  border-width: 2px;
+}
+
+.fishing-form__control .btn.disabled {
+  background-color: #D7D7D7;
+  border-color: #D7D7D7;
+  color: #fff;
+}
+
 .nav-step {
   margin-bottom: 25px;
   padding-bottom: 24px;
