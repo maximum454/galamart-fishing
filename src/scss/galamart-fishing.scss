@@ -1,0 +1,94 @@
+@import "mixin";
+
+* {
+	box-sizing: border-box;
+}
+
+body {
+	&.lock {
+		overflow: hidden;
+	}
+}
+
+.page-title,
+.breadcrumb {
+	display: none;
+}
+
+.main {
+	background-color: #fff;
+	font-family: 'PT Sans', sans-serif;
+	overflow: hidden;
+	margin-top: 10px;
+}
+
+.wrp {
+	margin-top: -20px;
+	position: relative;
+	font-family: 'PT Sans';
+	&:before{
+		content: '';
+		position: absolute;
+		top: 0;
+		left: 50%;
+		transform: translate(-50%,0);
+		background-image: url("../img/bg.png");
+		background-repeat: no-repeat;
+		background-size: auto;
+		background-position: top;
+		width: 100vw;
+		height: 100%;
+		pointer-events: none;
+		z-index: 10;
+	}
+}
+
+.container {
+	max-width: 1350px;
+	margin-left: auto;
+	margin-right: auto;
+	padding-right: 15px;
+	padding-left: 15px;
+}
+
+p {
+	font-size: 14px;
+	line-height: 17px;
+	color: #333333;
+}
+
+.d-none {
+	display: none !important;
+}
+
+.d-flex {
+	display: flex;
+}
+
+.d-block {
+	display: block;
+}
+
+.d-desktop-none {
+	display: none;
+	@include r(767) {
+		display: block;
+	}
+}
+
+.d-mobile-none {
+	display: block;
+	@include r(767) {
+		display: none !important;
+	}
+}
+
+.img-fluid {
+	max-width: 100%;
+	height: auto;
+}
+
+
+@import "componets/fishing-form";
+
+
