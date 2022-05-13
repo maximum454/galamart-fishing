@@ -1,0 +1,22 @@
+.already{
+  border: 1px solid #EEEEEE;
+  border-radius: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  max-width: 194px;
+  width: 100%;
+  height: 233px;
+  background-image: url("../img/already-bg.png");
+  background-repeat: no-repeat;
+  background-size: 100%;
+  &__text{
+    font-family: 'PT Sans';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 23px;
+    text-align: center;
+    color: #333333;
+  }
+}

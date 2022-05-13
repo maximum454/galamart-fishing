@@ -45,7 +45,7 @@
             <div class="fishing-form__body">
                 <div class="fishing-form__row">
                     <form action="">
-                        <fieldset class="fishing-form__tab">
+                        <fieldset data-step="0" class="fishing-form__tab d-none">
                             <div class="fishing-form__title">Выберите тип ловли или вариант готовой оснастки</div>
                             <div class="form-menu">
                                 <button class="form-menu__item">
@@ -67,7 +67,7 @@
                             </div>
 
                         </fieldset>
-                        <fieldset class="fishing-form__tab">
+                        <fieldset data-step="1" class="fishing-form__tab d-block">
                             <div class="fishing-form__nav-step nav-step">
                                 <ul class="nav-step__list">
                                     <li class="nav-step__item nav-step__item--check">1. Тип ловли</li>
@@ -78,8 +78,17 @@
                                     <li class="nav-step__item">6. Аксессуары</li>
                                 </ul>
                             </div>
+                            <div class="fishing-form__title">Выберите удилище</div>
+                            <div class="check-menu">
+
+                            </div>
+                            <div>
+                                <div class="already">
+                                    <div class="already__text">Уже есть телескопический спиннинг</div>
+                                </div>
+                            </div>
                         </fieldset>
-                        <fieldset class="fishing-form__tab"></fieldset>
+                        <fieldset data-step="2" class="fishing-form__tab"></fieldset>
                         <fieldset class="fishing-form__tab"></fieldset>
                         <fieldset class="fishing-form__tab"></fieldset>
                     </form>
