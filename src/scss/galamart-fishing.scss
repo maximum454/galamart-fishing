@@ -23,24 +23,18 @@ body {
 }
 
 .wrp {
-	margin-top: -20px;
 	position: relative;
 	font-family: 'PT Sans';
-	&:before{
-		content: '';
-		position: absolute;
-		top: 0;
-		left: 50%;
-		transform: translate(-50%,0);
-		background-image: url("../img/bg.png");
-		background-repeat: no-repeat;
-		background-size: auto;
-		background-position: top;
-		width: 100vw;
-		height: 100%;
-		pointer-events: none;
-		z-index: 10;
-	}
+	background-color: #000000;
+	background-image: url("../img/bg.png");
+	background-size: cover;
+	background-position: top;
+	background-repeat: no-repeat;
+	min-height: 100vh;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
 }
 
 .container {
@@ -89,6 +83,10 @@ p {
 }
 
 
+@import "componets/fishing-top";
+@import "componets/fishing-hero";
 @import "componets/fishing-form";
+@import "componets/nav-step";
+@import "componets/form-menu";
 
 
