@@ -160,32 +160,6 @@ p {
   margin-bottom: 30px;
 }
 
-.fishing-form__control {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  padding-bottom: 51px;
-  margin-bottom: 36px;
-  border-bottom: 1px solid #EEEEEE;
-}
-
-.fishing-form__control .btn {
-  border-radius: 30px;
-  border-width: 2px;
-}
-
-.fishing-form__control .btn.disabled {
-  background-color: #D7D7D7;
-  border-color: #D7D7D7;
-  color: #fff;
-}
-
 .nav-step {
   margin-bottom: 25px;
   padding-bottom: 24px;
@@ -288,15 +262,108 @@ p {
 }
 
 .check-menu {
+  margin-bottom: 30px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  gap: 30px;
   /* для элемента input c type="radio" */
   /* для элемента label связанного с .custom-radio */
-  /* создание в label псевдоэлемента  before со следующими стилями */
   /* стили при наведении курсора на радио */
   /* стили для активной радиокнопки (при нажатии на неё) */
   /* стили для радиокнопки, находящейся в фокусе */
   /* стили для радиокнопки, находящейся в фокусе и не находящейся в состоянии checked */
   /* стили для радиокнопки, находящейся в состоянии checked */
   /* стили для радиокнопки, находящейся в состоянии disabled */
+}
+
+.check-menu__label {
+  border: 1px solid #F2F3F4;
+  border-radius: 4px;
+  background-color: transparent;
+  padding: 8px 28px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 22px;
+  -webkit-box-flex: 1;
+      -ms-flex: 1 0 520px;
+          flex: 1 0 520px;
+  max-width: 520px;
+  -webkit-transition: all .3s ease;
+  -o-transition: all .3s ease;
+  transition: all .3s ease;
+  position: relative;
+}
+
+.check-menu__label:hover {
+  background: #FFFFFF;
+  -webkit-box-shadow: 0px 10px 50px rgba(0, 0, 0, 0.15);
+          box-shadow: 0px 10px 50px rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
+  -webkit-transition: all .3s ease;
+  -o-transition: all .3s ease;
+  transition: all .3s ease;
+  cursor: pointer;
+}
+
+.check-menu__label:hover .form-menu__arrow {
+  background-image: url("../img/arrow-active.svg");
+}
+
+.check-menu__img {
+  position: relative;
+  width: 100px;
+  height: 100px;
+}
+
+.check-menu__img:before {
+  content: '';
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+      -ms-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  background: -webkit-gradient(linear, left top, left bottom, from(#F2F3F4), to(rgba(242, 243, 244, 0)));
+  background: -o-linear-gradient(top, #F2F3F4 0%, rgba(242, 243, 244, 0) 100%);
+  background: linear-gradient(180deg, #F2F3F4 0%, rgba(242, 243, 244, 0) 100%);
+  -webkit-filter: drop-shadow(0px -5px 10px rgba(0, 0, 0, 0.05));
+          filter: drop-shadow(0px -5px 10px rgba(0, 0, 0, 0.05));
+  border-radius: 100px;
+  width: 100%;
+  height: 100%;
+}
+
+.check-menu__img:after {
+  content: '';
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+      -ms-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  background-color: #fff;
+  border-radius: 100px;
+  width: 69px;
+  height: 69px;
+}
+
+.check-menu__img img {
+  z-index: 1;
+  position: relative;
+}
+
+.check-menu__name {
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 26px;
+  color: #333333;
 }
 
 .check-menu .custom-radio > input {
@@ -320,15 +387,21 @@ p {
 
 .check-menu .custom-radio > span::before {
   content: '';
+  position: absolute;
+  top: 50%;
+  right: 19px;
+  -webkit-transform: translate(0, -50%);
+      -ms-transform: translate(0, -50%);
+          transform: translate(0, -50%);
   display: inline-block;
-  width: 1em;
-  height: 1em;
+  width: 24px;
+  height: 24px;
   -ms-flex-negative: 0;
       flex-shrink: 0;
   -webkit-box-flex: 0;
       -ms-flex-positive: 0;
           flex-grow: 0;
-  border: 1px solid #adb5bd;
+  border: 2px solid #FD7400;
   border-radius: 50%;
   margin-right: 0.5em;
   background-repeat: no-repeat;
@@ -341,8 +414,8 @@ p {
 }
 
 .check-menu .custom-radio > input:not(:disabled):active + span::before {
-  background-color: #b3d7ff;
-  border-color: #b3d7ff;
+  background-color: #FD7400;
+  border-color: #FD7400;
 }
 
 .check-menu .custom-radio > input:focus + span::before {
@@ -355,9 +428,9 @@ p {
 }
 
 .check-menu .custom-radio > input:checked + span::before {
-  border-color: #0b76ef;
-  background-color: #0b76ef;
-  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='-4 -4 8 8'%3e%3ccircle r='3' fill='%23fff'/%3e%3c/svg%3e");
+  border-color: #FD7400;
+  background-color: #fff;
+  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='-7 -7 14 14'%3e%3ccircle r='7' fill='%23FD7400'/%3e%3c/svg%3e");
 }
 
 .check-menu .custom-radio > input:disabled + span::before {
@@ -471,6 +544,57 @@ p {
   height: 50px;
   border: none;
   margin: 10px auto;
+}
+
+.fishing-catalog__body {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-bottom: 30px;
+}
+
+.fishing-catalog__item {
+  -webkit-box-flex: 1;
+      -ms-flex: 1 0 224px;
+          flex: 1 0 224px;
+  max-width: 224px;
+}
+
+.fishing-catalog__already {
+  -webkit-box-flex: 1;
+      -ms-flex: 1 0 192px;
+          flex: 1 0 192px;
+}
+
+.fishing-catalog__control {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding-bottom: 51px;
+  margin-bottom: 36px;
+  border-bottom: 1px solid #EEEEEE;
+}
+
+.fishing-catalog__control .btn {
+  border-radius: 30px;
+  border-width: 2px;
+}
+
+.fishing-catalog__control .btn.disabled {
+  background-color: #D7D7D7;
+  border-color: #D7D7D7;
+  color: #fff;
 }
 
 @media only screen and (max-width: 767px) {

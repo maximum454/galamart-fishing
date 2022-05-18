@@ -25,21 +25,4 @@
   &__catalog{
     margin-bottom: 30px;
   }
-  &__control{
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    padding-bottom: 51px;
-    margin-bottom: 36px;
-    border-bottom: 1px solid #EEEEEE;
-    .btn{
-      border-radius: 30px;
-      border-width: 2px;
-      &.disabled{
-        background-color:  #D7D7D7;
-        border-color:  #D7D7D7;
-        color: #fff;
-      }
-    }
-  }
 }

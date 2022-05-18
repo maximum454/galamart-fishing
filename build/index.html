@@ -68,7 +68,7 @@
             <div class="fishing-form__body">
                 <div class="fishing-form__row">
                     <form action="">
-                        <fieldset data-step="0" class="fishing-form__tab d-block">
+                        <fieldset data-step="0" class="fishing-form__tab d-none">
                             <div class="fishing-form__title">Выберите тип ловли или вариант готовой оснастки</div>
                             <div class="form-menu">
                                 <button class="form-menu__item">
@@ -103,23 +103,47 @@
                             </div>
                             <div class="fishing-form__title">Выберите удилище</div>
                             <div class="check-menu">
-                                <label class="custom-radio">
-                                    <input type="radio" name="color" value="indigo">
-                                    <span>Indigo</span>
+                                <label class="check-menu__label custom-radio">
+                                    <div class="check-menu__img">
+                                        <img class="img-fluid" src="./img/check-menu-delete.png" width="100" height="100" alt="">
+                                    </div>
+                                    <input type="radio" name="spining1" value="Телескопический спиннинг">
+                                    <span class="check-menu__name">Телескопический спиннинг</span>
+                                </label>
+
+                                <label class="check-menu__label custom-radio">
+                                    <div class="check-menu__img">
+                                        <img class="img-fluid" src="./img/check-menu-delete.png" width="100" height="100" alt="">
+                                    </div>
+                                    <input type="radio" name="spining1" value="Штекерный спиннинг">
+                                    <span class="check-menu__name">Штекерный спиннинг</span>
                                 </label>
                             </div>
-                            <div class="fishing-form__catalog">
+                            <div class="fishing-form__catalog fishing-catalog">
                                 <!--Каталог-->
-                                <div class="already">
-                                    <div class="already__text">Уже есть телескопический спиннинг</div>
+                                <div class="fishing-catalog__body">
+                                    <div class="fishing-catalog__item">
+                                        <img class="img-fluid" src="./img/cart-delete.png" width="224" height="373" alt="">
+                                    </div>
+                                    <div class="fishing-catalog__item">
+                                        <img class="img-fluid" src="./img/cart-delete.png" width="224" height="373" alt="">
+                                    </div>
+                                    <div class="fishing-catalog__item">
+                                        <img class="img-fluid" src="./img/cart-delete.png" width="224" height="373" alt="">
+                                    </div>
+                                    <div class="fishing-catalog__item">
+                                        <img class="img-fluid" src="./img/cart-delete.png" width="224" height="373" alt="">
+                                    </div>
+                                        <div class="fishing-catalog__already already">
+                                            <div class="already__text">Уже есть телескопический спиннинг</div>
+                                        </div>
                                 </div>
-
-
+                                <div class="fishing-catalog__control">
+                                    <button type="button" class="btn btn-outline-primary">Перейти в начало</button>
+                                    <button type="button" class="btn btn-outline-primary disabled">Оснастка для телескопического спиннинга</button>
+                                </div>
                             </div>
-                            <div class="fishing-form__control">
-                                <button type="button" class="btn btn-outline-primary">Перейти в начало</button>
-                                <button type="button" class="btn btn-outline-primary disabled">Оснастка для телескопического спиннинга</button>
-                            </div>
+
                             <div class="product-selection">
                                 <div class="product-selection__header">
                                     <div class="product-selection__title">Ваша подборка товаров</div>
