@@ -121,6 +121,7 @@ p {
 
 .fishing-hero {
   width: 100%;
+  margin-top: 100px;
 }
 
 .fishing-hero__body {
@@ -142,6 +143,7 @@ p {
 
 .fishing-form {
   width: 100%;
+  margin-bottom: 30px;
 }
 
 .fishing-form__row {
@@ -266,6 +268,19 @@ p {
   background-image: url("../img/arrow-active.svg");
 }
 
+.form-menu__img {
+  -ms-flex-negative: 0;
+      flex-shrink: 0;
+}
+
+.form-menu__name {
+  font-weight: 700;
+  font-size: 17px;
+  line-height: 22px;
+  color: #333333;
+  text-align: left;
+}
+
 .form-menu__arrow {
   display: block;
   background-image: url("../img/arrow.svg");
@@ -275,6 +290,8 @@ p {
   height: 24px;
   margin-right: 0;
   margin-left: auto;
+  -ms-flex-negative: 0;
+      flex-shrink: 0;
 }
 
 .check-menu {
@@ -711,11 +728,108 @@ p {
 }
 
 @media only screen and (max-width: 767px) {
+  .wrp {
+    background-image: url("../img/bg-mobile.png");
+  }
+
   .d-desktop-none {
     display: block;
   }
 
   .d-mobile-none {
     display: none !important;
+  }
+
+  .fishing-form__title {
+    font-size: 18px;
+    line-height: 24px;
+    margin-bottom: 10px;
+  }
+
+  .form-menu {
+    gap: 10px;
+  }
+
+  .form-menu__item {
+    -webkit-box-flex: 1;
+        -ms-flex: 1 0 100%;
+            flex: 1 0 100%;
+    padding: 9px 15px;
+  }
+
+  .form-menu__item:hover {
+    background: #FFFFFF;
+    -webkit-box-shadow: 0px 10px 50px rgba(0, 0, 0, 0.15);
+            box-shadow: 0px 10px 50px rgba(0, 0, 0, 0.15);
+    border-radius: 4px;
+    -webkit-transition: all .3s ease;
+    -o-transition: all .3s ease;
+    transition: all .3s ease;
+  }
+
+  .form-menu__item:hover .form-menu__arrow {
+    background-image: url("../img/arrow-active.svg");
+  }
+
+  .form-menu__img {
+    width: 50px;
+  }
+
+  .form-menu__name {
+    font-size: 14px;
+    line-height: 18px;
+  }
+
+  .check-menu {
+    gap: 10px;
+  }
+
+  .check-menu__label {
+    padding: 10px 60px 10px 16px;
+    gap: 10px;
+    -webkit-box-flex: 1;
+        -ms-flex: 1 0 100%;
+            flex: 1 0 100%;
+    max-width: 100%;
+  }
+
+  .check-menu__label:hover {
+    background: #FFFFFF;
+    -webkit-box-shadow: 0px 10px 50px rgba(0, 0, 0, 0.15);
+            box-shadow: 0px 10px 50px rgba(0, 0, 0, 0.15);
+    border-radius: 4px;
+    -webkit-transition: all .3s ease;
+    -o-transition: all .3s ease;
+    transition: all .3s ease;
+    cursor: pointer;
+  }
+
+  .check-menu__label:hover .form-menu__arrow {
+    background-image: url("../img/arrow-active.svg");
+  }
+
+  .check-menu__img {
+    width: 50px;
+    height: 50px;
+  }
+
+  .check-menu__name {
+    font-size: 14px;
+    line-height: 18px;
+  }
+
+  .fishing-catalog__item {
+    -webkit-box-flex: 1;
+        -ms-flex: 1 0 150px;
+            flex: 1 0 150px;
+    max-width: 150px;
+    display: block;
+    text-decoration: none;
+  }
+
+  .fishing-catalog__item:hover {
+    -webkit-box-shadow: 0px 10px 50px rgba(0, 0, 0, 0.15);
+            box-shadow: 0px 10px 50px rgba(0, 0, 0, 0.15);
+    z-index: 1;
   }
 }

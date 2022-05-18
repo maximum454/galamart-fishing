@@ -24,6 +24,16 @@
       }
     }
   }
+  &__img{
+    flex-shrink: 0;
+  }
+  &__name{
+    font-weight: 700;
+    font-size: 17px;
+    line-height: 22px;
+    color: #333333;
+    text-align: left;
+  }
   &__arrow{
     display: block;
     background-image: url("../img/arrow.svg");
@@ -33,5 +43,29 @@
     height: 24px;
     margin-right: 0;
     margin-left: auto;
+    flex-shrink: 0;
+  }
+  @include r(767){
+    gap: 10px;
+    &__item{
+      flex: 1 0 100%;
+      padding: 9px 15px;
+      &:hover{
+        background: #FFFFFF;
+        box-shadow: 0px 10px 50px rgba(0, 0, 0, 0.15);
+        border-radius: 4px;
+        transition: all .3s ease;
+        .form-menu__arrow{
+          background-image: url("../img/arrow-active.svg");
+        }
+      }
+    }
+    &__img{
+      width: 50px;
+    }
+    &__name{
+      font-size: 14px;
+      line-height: 18px;
+    }
   }
 }

@@ -1,5 +1,6 @@
 .fishing-form{
   width: 100%;
+  margin-bottom: 30px;
   &__body{
 
   }
@@ -30,5 +31,12 @@
   &__itog{
     border-top: 1px solid #EEEEEE;
     padding: 22px;
+  }
+  @include r(767){
+    &__title{
+      font-size: 18px;
+      line-height: 24px;
+      margin-bottom: 10px;
+    }
   }
 }
