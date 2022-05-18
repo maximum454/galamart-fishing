@@ -1,13 +1,13 @@
 .fishing-form{
   width: 100%;
   &__body{
-    background-color: #fff;
-    border-radius: 20px;
+
   }
   &__row{
     max-width: 1120px;
     margin: 0 auto;
     padding: 34px 16px 50px;
+
   }
   &__title{
     font-family: 'PT Sans';
@@ -21,8 +21,14 @@
   }
   &__tab{
     display: none;
+    background-color: #fff;
+    border-radius: 20px;
   }
   &__catalog{
     margin-bottom: 30px;
+  }
+  &__itog{
+    border-top: 1px solid #EEEEEE;
+    padding: 22px;
   }
 }

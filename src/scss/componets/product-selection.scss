@@ -1,4 +1,5 @@
 .product-selection{
+  margin-bottom: 30px;
   &__header{
     margin-bottom: 22px;
     display: flex;
@@ -31,6 +32,8 @@
     background-size: 9px;
     background-position: left;
     padding-left: 18px;
+    cursor: pointer;
+    text-decoration: none;
   }
   &__body{
     display: flex;
@@ -40,7 +43,7 @@
   &__col{
     flex: 1 0 190px;
   }
-  &__name{
+  &__subtitle{
     border: 1px solid #EEEEEE;
     border-radius: 20px;
     font-family: 'PT Sans';
@@ -49,7 +52,6 @@
     font-size: 18px;
     line-height: 23px;
     text-align: center;
-
     color: #999999;
     padding: 40px;
   }
@@ -61,5 +63,31 @@
     height: 50px;
     border: none;
     margin: 10px auto;
+  }
+  &__item{
+    margin-bottom: 12px;
+  }
+  &__img{
+    max-width: 120px;
+    margin: 0 auto 9px;
+    img{
+      display: block;
+      margin: 0 auto;
+    }
+  }
+  &__name{
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 17px;
+    color: #333333;
+    margin-bottom: 10px;
+  }
+  &__price{
+    font-weight: 700;
+    font-size: 21px;
+    line-height: 12px;
+    color: #333333;
+    margin-bottom: 15px;
   }
 }

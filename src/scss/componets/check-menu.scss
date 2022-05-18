@@ -102,7 +102,7 @@
 
   /* стили при наведении курсора на радио */
   .custom-radio>input:not(:disabled):not(:checked)+span:hover::before {
-    border-color: #b3d7ff;
+    border-color: #FD7400;
   }
 
   /* стили для активной радиокнопки (при нажатии на неё) */
@@ -113,12 +113,12 @@
 
   /* стили для радиокнопки, находящейся в фокусе */
   .custom-radio>input:focus+span::before {
-    box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, 0.25);
+    box-shadow: 0 0 0 0.2rem rgba(253, 116, 0, 0.25);
   }
 
   /* стили для радиокнопки, находящейся в фокусе и не находящейся в состоянии checked */
   .custom-radio>input:focus:not(:checked)+span::before {
-    border-color: #80bdff;
+    border-color: #FD7400;
   }
 
   /* стили для радиокнопки, находящейся в состоянии checked */

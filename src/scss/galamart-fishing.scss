@@ -81,6 +81,18 @@ p {
 	max-width: 100%;
 	height: auto;
 }
+.btn-outline-ternary{
+	border: 2px solid #4D4D4D;
+	border-radius: 30px;
+	&:hover{
+		background-color: #4D4D4D;
+		color: #fff;
+	}
+}
+.btn-radius{
+	border-radius: 30px;
+}
+
 
 
 @import "componets/fishing-top";
@@ -92,5 +104,6 @@ p {
 @import "componets/already";
 @import "componets/product-selection";
 @import "componets/fishing-catalog";
+@import "componets/fishing-pay";
 
 

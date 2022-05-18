@@ -8,9 +8,21 @@
   &__item{
     flex: 1 0 224px;
     max-width: 224px;
+    display: block;
+    text-decoration: none;
+    &:hover{
+      box-shadow: 0px 10px 50px rgba(0, 0, 0, 0.15);
+      z-index: 1;
+    }
   }
   &__already{
     flex: 1 0 192px;
+    cursor: pointer;
+    text-decoration: none;
+    &:hover{
+      box-shadow: 0px 10px 50px rgba(0, 0, 0, 0.15);
+      z-index: 1;
+    }
   }
   &__control{
     display: flex;
@@ -27,6 +39,10 @@
         border-color:  #D7D7D7;
         color: #fff;
       }
+    }
+    .btn-outline-ternary{
+      margin-right: 20px;
+      margin-left: auto;
     }
   }
 }
