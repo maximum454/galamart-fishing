@@ -67,33 +67,33 @@
     <div class="fishing-form">
         <div class="container">
             <div class="fishing-form__body">
-                <form action="">
-                    <fieldset data-step="0" class="fishing-form__tab ">
+                <form id="FishingForm" action="">
+                    <fieldset data-step="1" class="fishing-form__tab">
                         <div class="fishing-form__row">
                         <div class="fishing-form__title">Выберите тип ловли или вариант готовой оснастки</div>
                         <div class="form-menu">
-                            <button class="form-menu__item">
+                            <button type="button" class="form-menu__item" onclick="nextPrev(1)">
                                 <div class="form-menu__img">
                                     <img class="img-fluid" src="./img/menu-img-1.png" width="92" height="96" alt="">
                                 </div>
                                 <div class="form-menu__name">Спиннинговая ловля</div>
                                 <span class="form-menu__arrow"></span>
                             </button>
-                            <button class="form-menu__item">
+                            <button type="button" class="form-menu__item" onclick="nextPrev(1)">
                                 <div class="form-menu__img">
                                     <img class="img-fluid" src="./img/menu-img-2.png" width="92" height="96" alt="">
                                 </div>
                                 <div class="form-menu__name">Ловля на поплавок</div>
                                 <span class="form-menu__arrow"></span>
                             </button>
-                            <button class="form-menu__item">
+                            <button type="button" class="form-menu__item" onclick="nextPrev(1)">
                                 <div class="form-menu__img">
                                     <img class="img-fluid" src="./img/menu-img-3.png" width="92" height="96" alt="">
                                 </div>
                                 <div class="form-menu__name">Ловля на донку</div>
                                 <span class="form-menu__arrow"></span>
                             </button>
-                            <button class="form-menu__item">
+                            <button type="button" class="form-menu__item" onclick="nextPrev(1)">
                                 <div class="form-menu__img">
                                     <img class="img-fluid" src="./img/menu-img-4.png" width="92" height="96" alt="">
                                 </div>
@@ -103,12 +103,12 @@
                         </div>
                         </div>
                     </fieldset>
-                    <fieldset data-step="1" class="fishing-form__tab ">
+                    <fieldset data-step="2" class="fishing-form__tab">
                         <div class="fishing-form__row">
                         <div class="fishing-form__nav-step nav-step">
                             <ul class="nav-step__list">
                                 <li class="nav-step__item nav-step__item--check">1. Тип ловли</li>
-                                <li class="nav-step__item nav-step__item--active">2. Удилище</li>
+                                <li class="nav-step__item">2. Удилище</li>
                                 <li class="nav-step__item">3. Катушка</li>
                                 <li class="nav-step__item">4. Леска</li>
                                 <li class="nav-step__item">5. Приманка</li>
@@ -159,8 +159,8 @@
                                 </div>
                             </div>
                             <div class="fishing-catalog__control">
-                                <button type="button" class="btn btn-outline-primary js-start-menu">Перейти в начало</button>
-                                <button type="button" class="btn btn-primary fishing-catalog__next"><span>Оснастка для телескопического спиннинга</span></button>
+                                <button type="button" class="btn btn-outline-primary js-start-menu" onclick="nextPrev(0)">Перейти в начало</button>
+                                <button type="button" class="btn btn-primary fishing-catalog__next" onclick="nextPrev(1)"><span>Оснастка для телескопического спиннинга</span></button>
                             </div>
                         </div>
                         <div class="product-selection">
@@ -194,12 +194,12 @@
                         </div>
                         </div>
                     </fieldset>
-                    <fieldset data-step="2" class="fishing-form__tab ">
+                    <fieldset data-step="3" class="fishing-form__tab">
                         <div class="fishing-form__row">
                         <div class="fishing-form__nav-step nav-step">
                             <ul class="nav-step__list">
-                                <li class="nav-step__item nav-step__item--check">1. Тип ловли</li>
-                                <li class="nav-step__item nav-step__item--active">2. Удилище</li>
+                                <li class="nav-step__item">1. Тип ловли</li>
+                                <li class="nav-step__item">2. Удилище</li>
                                 <li class="nav-step__item">3. Катушка</li>
                                 <li class="nav-step__item">4. Леска</li>
                                 <li class="nav-step__item">5. Приманка</li>
@@ -250,91 +250,8 @@
                                 </div>
                             </div>
                             <div class="fishing-catalog__control">
-                                <button type="button" class="btn btn-outline-primary">Перейти в начало</button>
-                                <button type="button" class="btn btn-primary fishing-catalog__next"><span>Оснастка для телескопического спиннинга</span></button>
-                            </div>
-                        </div>
-                        <div class="product-selection">
-                            <div class="product-selection__header">
-                                <div class="product-selection__title">Ваша подборка товаров</div>
-                                <div class="product-selection__clear">Очистить подборку</div>
-                            </div>
-
-                            <div class="product-selection__body">
-                                <div class="product-selection__col">
-                                    <div class="product-selection__subtitle d-none">Удилище</div>
-                                    <div class="product-selection__item">
-                                        <div class="product-selection__img">
-                                            <img src="./img/check-menu-delete.png" width="120" height="120" alt="">
-                                        </div>
-                                        <div class="product-selection__name">Спиннинг AZOR FISHING "Дракон"</div>
-                                        <div class="product-selection__price">1 154 ₽</div>
-                                        <a href="" class="btn btn-outline-primary">заменить</a>
-                                    </div>
-                                    <button class="product-selection__add"></button>
-                                </div>
-                                <div class="product-selection__col">
-                                    <div class="product-selection__subtitle">Катушка</div>
-                                    <button class="product-selection__add"></button>
-                                </div>
-                                <div class="product-selection__col">
-                                    <div class="product-selection__subtitle">Леска</div>
-                                    <button class="product-selection__add"></button>
-                                </div>
-                                <div class="product-selection__col">
-                                    <div class="product-selection__subtitle">Приманка</div>
-                                    <button class="product-selection__add"></button>
-                                </div>
-                                <div class="product-selection__col">
-                                    <div class="product-selection__subtitle">Аксессуары</div>
-                                    <button class="product-selection__add"></button>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="fishing-form__itog">Итого: <b>1154 ₽</b></div>
-                        </div>
-                    </fieldset>
-                    <fieldset data-step="3" class="fishing-form__tab d-block">
-                        <div class="fishing-form__row">
-                        <div class="fishing-form__nav-step nav-step">
-                            <ul class="nav-step__list">
-                                <li class="nav-step__item nav-step__item--check">1. Тип ловли</li>
-                                <li class="nav-step__item nav-step__item--check">2. Удилище</li>
-                                <li class="nav-step__item nav-step__item--active">3. Катушка</li>
-                                <li class="nav-step__item">4. Леска</li>
-                                <li class="nav-step__item">5. Приманка</li>
-                                <li class="nav-step__item">6. Аксессуары</li>
-                            </ul>
-                        </div>
-                        <div class="fishing-form__title">Выберите катушку</div>
-                        <div class="fishing-form__catalog fishing-catalog">
-                            <!--Каталог-->
-                            <div class="fishing-catalog__body">
-                                <div class="fishing-catalog__item">
-                                    <img class="img-fluid" src="./img/cart-delete.png" width="224" height="373"
-                                         alt="">
-                                </div>
-                                <div class="fishing-catalog__item">
-                                    <img class="img-fluid" src="./img/cart-delete.png" width="224" height="373"
-                                         alt="">
-                                </div>
-                                <div class="fishing-catalog__item">
-                                    <img class="img-fluid" src="./img/cart-delete.png" width="224" height="373"
-                                         alt="">
-                                </div>
-                                <div class="fishing-catalog__item">
-                                    <img class="img-fluid" src="./img/cart-delete.png" width="224" height="373"
-                                         alt="">
-                                </div>
-                                <div class="fishing-catalog__already already">
-                                    <div class="already__text">Уже есть телескопический спиннинг</div>
-                                </div>
-                            </div>
-                            <div class="fishing-catalog__control">
-                                <button type="button" class="btn btn-outline-primary">Перейти в начало</button>
-
-                                <button type="button" class="btn btn-outline-ternary fishing-catalog__prev"><span>Выбор спиннинга</span></button>
-                                <button type="button" class="btn btn-primary fishing-catalog__next"><span>Выбрать леску</span></button>
+                                <button type="button" class="btn btn-outline-primary" onclick="nextPrev(0)">Перейти в начало</button>
+                                <button type="button" class="btn btn-primary fishing-catalog__next" onclick="nextPrev(1)"><span>Оснастка для телескопического спиннинга</span></button>
                             </div>
                         </div>
                         <div class="product-selection">
@@ -389,6 +306,89 @@
                                 <li class="nav-step__item">6. Аксессуары</li>
                             </ul>
                         </div>
+                        <div class="fishing-form__title">Выберите катушку</div>
+                        <div class="fishing-form__catalog fishing-catalog">
+                            <!--Каталог-->
+                            <div class="fishing-catalog__body">
+                                <div class="fishing-catalog__item">
+                                    <img class="img-fluid" src="./img/cart-delete.png" width="224" height="373"
+                                         alt="">
+                                </div>
+                                <div class="fishing-catalog__item">
+                                    <img class="img-fluid" src="./img/cart-delete.png" width="224" height="373"
+                                         alt="">
+                                </div>
+                                <div class="fishing-catalog__item">
+                                    <img class="img-fluid" src="./img/cart-delete.png" width="224" height="373"
+                                         alt="">
+                                </div>
+                                <div class="fishing-catalog__item">
+                                    <img class="img-fluid" src="./img/cart-delete.png" width="224" height="373"
+                                         alt="">
+                                </div>
+                                <div class="fishing-catalog__already already">
+                                    <div class="already__text">Уже есть телескопический спиннинг</div>
+                                </div>
+                            </div>
+                            <div class="fishing-catalog__control">
+                                <button type="button" class="btn btn-outline-primary" onclick="nextPrev(0)">Перейти в начало</button>
+
+                                <button type="button" class="btn btn-outline-ternary fishing-catalog__prev" onclick="nextPrev(-1)"><span>Выбор спиннинга</span></button>
+                                <button type="button" class="btn btn-primary fishing-catalog__next" onclick="nextPrev(1)"><span>Выбрать леску</span></button>
+                            </div>
+                        </div>
+                        <div class="product-selection">
+                            <div class="product-selection__header">
+                                <div class="product-selection__title">Ваша подборка товаров</div>
+                                <div class="product-selection__clear">Очистить подборку</div>
+                            </div>
+
+                            <div class="product-selection__body">
+                                <div class="product-selection__col">
+                                    <div class="product-selection__subtitle d-none">Удилище</div>
+                                    <div class="product-selection__item">
+                                        <div class="product-selection__img">
+                                            <img src="./img/check-menu-delete.png" width="120" height="120" alt="">
+                                        </div>
+                                        <div class="product-selection__name">Спиннинг AZOR FISHING "Дракон"</div>
+                                        <div class="product-selection__price">1 154 ₽</div>
+                                        <a href="" class="btn btn-outline-primary">заменить</a>
+                                    </div>
+                                    <button class="product-selection__add"></button>
+                                </div>
+                                <div class="product-selection__col">
+                                    <div class="product-selection__subtitle">Катушка</div>
+                                    <button class="product-selection__add"></button>
+                                </div>
+                                <div class="product-selection__col">
+                                    <div class="product-selection__subtitle">Леска</div>
+                                    <button class="product-selection__add"></button>
+                                </div>
+                                <div class="product-selection__col">
+                                    <div class="product-selection__subtitle">Приманка</div>
+                                    <button class="product-selection__add"></button>
+                                </div>
+                                <div class="product-selection__col">
+                                    <div class="product-selection__subtitle">Аксессуары</div>
+                                    <button class="product-selection__add"></button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="fishing-form__itog">Итого: <b>1154 ₽</b></div>
+                        </div>
+                    </fieldset>
+                    <fieldset data-step="5" class="fishing-form__tab">
+                        <div class="fishing-form__row">
+                        <div class="fishing-form__nav-step nav-step">
+                            <ul class="nav-step__list">
+                                <li class="nav-step__item nav-step__item--check">1. Тип ловли</li>
+                                <li class="nav-step__item nav-step__item--check">2. Удилище</li>
+                                <li class="nav-step__item nav-step__item--active">3. Катушка</li>
+                                <li class="nav-step__item">4. Леска</li>
+                                <li class="nav-step__item">5. Приманка</li>
+                                <li class="nav-step__item">6. Аксессуары</li>
+                            </ul>
+                        </div>
                         <div class="fishing-form__title">Выберите леску</div>
                         <div class="fishing-form__catalog fishing-catalog">
                             <!--Каталог-->
@@ -414,10 +414,10 @@
                                 </div>
                             </div>
                             <div class="fishing-catalog__control">
-                                <button type="button" class="btn btn-outline-primary">Перейти в начало</button>
+                                <button type="button" class="btn btn-outline-primary" onclick="nextPrev(0)">Перейти в начало</button>
 
-                                <button type="button" class="btn btn-outline-ternary">Выбор спиннинга</button>
-                                <button type="button" class="btn btn-primary">Выбрать леску</button>
+                                <button type="button" class="btn btn-outline-ternary" onclick="nextPrev(-1)">Выбор спиннинга</button>
+                                <button type="button" class="btn btn-primary" onclick="nextPrev(1)">Выбрать леску</button>
                             </div>
                         </div>
                         <div class="product-selection">
@@ -460,7 +460,7 @@
                         <div class="fishing-form__itog">Итого: <b>2233 ₽</b></div>
                         </div>
                     </fieldset>
-                    <fieldset data-step="5" class="fishing-form__tab">
+                    <fieldset data-step="6" class="fishing-form__tab">
                         <div class="fishing-form__row">
                             <div class="fishing-form__nav-step nav-step">
                                 <ul class="nav-step__list">
@@ -497,9 +497,9 @@
                                     </div>
                                 </div>
                                 <div class="fishing-catalog__control">
-                                    <button type="button" class="btn btn-outline-primary">Перейти в начало</button>
-                                    <button type="button" class="btn btn-outline-ternary">Выбрать леску</button>
-                                    <button type="button" class="btn btn-primary">Выбрать аксессуары</button>
+                                    <button type="button" class="btn btn-outline-primary" onclick="nextPrev(0)">Перейти в начало</button>
+                                    <button type="button" class="btn btn-outline-ternary" onclick="nextPrev(-1)">Выбрать леску</button>
+                                    <button type="button" class="btn btn-primary" onclick="nextPrev(1)">Выбрать аксессуары</button>
                                 </div>
                             </div>
                             <div class="product-selection">
@@ -542,7 +542,7 @@
                             <div class="fishing-form__itog">Итого: <b>2233 ₽</b></div>
                         </div>
                     </fieldset>
-                    <fieldset data-step="6" class="fishing-form__tab">
+                    <fieldset data-step="7" class="fishing-form__tab">
                         <div class="fishing-form__row">
                             <div class="fishing-form__nav-step nav-step">
                                 <ul class="nav-step__list">
@@ -579,8 +579,8 @@
                                     </div>
                                 </div>
                                 <div class="fishing-catalog__control">
-                                    <button type="button" class="btn btn-outline-primary">Перейти в начало</button>
-                                    <button type="button" class="btn btn-outline-ternary">Выбрать леску</button>
+                                    <button type="button" class="btn btn-outline-primary" onclick="nextPrev(0)">Перейти в начало</button>
+                                    <button type="button" class="btn btn-outline-ternary" onclick="nextPrev(-1)">Выбрать леску</button>
                                 </div>
                             </div>
                             <div class="product-selection">
@@ -672,13 +672,14 @@
                             </div>
                         </div>
                     </fieldset>
-                    <fieldset data-step="7" class="fishing-form__tab">
+
+                    <fieldset data-step="8" class="fishing-form__tab">
                         <div class="fishing-form__row">
                         <div class="fishing-form__title">Ваш заказ</div>
                         <img class="img-fluid" src="./img/order-delete.png" width="1160" height="519" alt="">
                         </div>
                     </fieldset>
-                    <fieldset data-step="8" class="fishing-form__tab">
+                    <fieldset data-step="9" class="fishing-form__tab">
                         <div class="fishing-form__row">
                             <div class="fishing-form__title">Оформление заказа</div>
                             <img class="img-fluid" src="./img/order2-delete.png" width="1216" height="1622" alt="">
